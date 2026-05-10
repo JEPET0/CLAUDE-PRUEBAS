@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pruebas de CRM</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 20px 40px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    main {
+      padding: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 16px;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .card-description {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .card-price {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1a73e8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pruebas de CRM</h1>
+  </header>
+
+  <main>
+    <div class="grid" id="product-grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=180&fit=crop" alt="Reloj">
+        <div class="card-body">
+          <div class="card-title">Reloj Premium</div>
+          <div class="card-description">Reloj de pulsera con correa de cuero genuino y mecanismo de cuarzo suizo.</div>
+          <div class="card-price">189,99 €</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=400&h=180&fit=crop" alt="Perfume">
+        <div class="card-body">
+          <div class="card-title">Perfume Élite</div>
+          <div class="card-description">Fragancia exclusiva con notas de sándalo, vainilla y flores orientales. 100 ml.</div>
+          <div class="card-price">74,50 €</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=400&h=180&fit=crop" alt="Zapatillas">
+        <div class="card-body">
+          <div class="card-title">Zapatillas Sport</div>
+          <div class="card-description">Calzado deportivo ligero con suela de gel y tejido transpirable. Ideal para running.</div>
+          <div class="card-price">99,00 €</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400&h=180&fit=crop" alt="Cámara">
+        <div class="card-body">
+          <div class="card-title">Cámara Instantánea</div>
+          <div class="card-description">Cámara analógica de revelado instantáneo con flash integrado y visor óptico.</div>
+          <div class="card-price">59,95 €</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=180&fit=crop" alt="Libro">
+        <div class="card-body">
+          <div class="card-title">Libro de Diseño UX</div>
+          <div class="card-description">Guía completa sobre principios de diseño centrado en el usuario. 320 páginas.</div>
+          <div class="card-price">32,00 €</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=180&fit=crop" alt="Auriculares">
+        <div class="card-body">
+          <div class="card-title">Auriculares Inalámbricos</div>
+          <div class="card-description">Sonido de alta fidelidad con cancelación activa de ruido y autonomía de 30 horas.</div>
+          <div class="card-price">149,99 €</div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
